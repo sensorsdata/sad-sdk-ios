@@ -1,0 +1,6 @@
+framework module SensorsAdvertising {
+  umbrella header "SensorsAdvertising.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,32 @@
+PODS:
+  - SensorsAdvertising (0.0.1):
+    - SensorsAnalyticsSDK (>= 2.6.3)
+  - SensorsAnalyticsSDK (3.1.3):
+    - SensorsAnalyticsSDK/Core (= 3.1.3)
+  - SensorsAnalyticsSDK/AutoTrack (3.1.3):
+    - SensorsAnalyticsSDK/Common
+  - SensorsAnalyticsSDK/Common (3.1.3)
+  - SensorsAnalyticsSDK/Core (3.1.3):
+    - SensorsAnalyticsSDK/Common
+    - SensorsAnalyticsSDK/Visualized
+  - SensorsAnalyticsSDK/Visualized (3.1.3):
+    - SensorsAnalyticsSDK/AutoTrack
+
+DEPENDENCIES:
+  - SensorsAdvertising (from `./`)
+
+SPEC REPOS:
+  trunk:
+    - SensorsAnalyticsSDK
+
+EXTERNAL SOURCES:
+  SensorsAdvertising:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  SensorsAdvertising: dfe1f550e59047485965ec7cfb29a71a48cb9ab5
+  SensorsAnalyticsSDK: 3a5367b0b28de2ddeefcaeaa89091f23a51d99e5
+
+PODFILE CHECKSUM: 87986e7b09da6d2ab5f4723e19959cf969fbcd3f
+
+COCOAPODS: 1.10.1
