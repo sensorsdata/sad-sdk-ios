@@ -14,7 +14,7 @@ SensorsAdvertising SDK 是一款用于统计渠道推广效果的 SDK。
 
 ## 集成文档
 
-请参考神策官网：[SensorsAdvertising SDK](https:xxxxx)。
+请参考神策官网：[SensorsAdvertising SDK](https://manual.sensorsdata.cn/sa/latest/tech_sdk_client_ad_ios-35685041.html)。
 
 ## 讨论
 
