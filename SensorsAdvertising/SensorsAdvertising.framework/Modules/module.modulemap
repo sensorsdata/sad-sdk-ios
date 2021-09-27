@@ -1,5 +1,5 @@
 framework module SensorsAdvertising {
-  umbrella header "SensorsAdvertising.h"
+  umbrella header "SensorsAdvertising-umbrella.h"
 
   export *
   module * { export * }
