@@ -1,8 +1,8 @@
 //
-// SensorsAdvertising.h
+// SADConfigOptions+Tracking.h
 // SensorsAdvertising
 //
-// Created by yuqiang on 2021/8/16.
+// Created by yuqiang on 2021/11/22.
 // Copyright © 2021 Sensors Data Co., Ltd. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,28 +18,15 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
 #import "SADConfigOptions.h"
-#import "SensorsAnalyticsSDK+SADAppInstall.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SensorsAdvertising : NSObject
+@interface SADConfigOptions (Tracking)
 
-@property (class, nonatomic, readonly) SensorsAdvertising *sharedInstance NS_SWIFT_NAME(shared);
-
-/// 初始化 SDK
-/// @param configOptions 配置项
-+ (void)startWithConfigOptions:(SADConfigOptions *)configOptions NS_SWIFT_NAME(start(configOptions:));
-
-/// SDK 版本
-- (NSString *)SDKVersion;
+/// 是否自动请求授权 IDFA, 默认值为 YES
+@property (nonatomic, assign) BOOL autoRequestTrackingAuthorization;
 
 @end
 
 NS_ASSUME_NONNULL_END
-
-#if __has_include("SensorsAdvertising+Tracking.h")
-#import "SensorsAdvertising+Tracking.h"
-#import "SADConfigOptions+Tracking.h"
-#endif

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SensorsAdvertising'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.summary = 'The official iOS SDK of Sensors Advertising.'
   s.homepage = 'http://www.sensorsdata.cn'
   s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
@@ -11,13 +11,22 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.cocoapods_version = '>= 1.5.0'
   s.ios.framework = 'UIKit', 'Foundation', "SystemConfiguration", 'AdSupport', 'iAd'
-  s.weak_frameworks = 'AppTrackingTransparency', 'AdServices'
+  s.weak_frameworks = 'AdServices'
   s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER': 'com.sensorsdata.SensorsAdvertising', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   s.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.static_framework = true
-
-  base_dir = 'SensorsAdvertising/'
-  s.vendored_frameworks = base_dir + 'SensorsAdvertising.framework'
-
   s.dependency 'SensorsAnalyticsSDK', '>= 2.6.3'
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |c|
+    s.weak_frameworks = 'AppTrackingTransparency'
+    base_dir = 'SensorsAdvertising/'
+    c.vendored_frameworks = base_dir + 'SensorsAdvertising.framework'
+  end
+
+  s.subspec 'AdServices' do |a|
+    base_dir = 'SensorsAdvertising_AdServices/'
+    a.vendored_frameworks = base_dir + 'SensorsAdvertising.framework'
+  end
+
 end
