@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.cocoapods_version = '>= 1.5.0'
-  s.ios.framework = 'UIKit', 'Foundation', "SystemConfiguration", 'AdSupport', 'iAd'
+  s.ios.framework = 'UIKit', 'Foundation', "SystemConfiguration"
   s.weak_frameworks = 'AdServices'
   s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER': 'com.sensorsdata.SensorsAdvertising', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   s.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |c|
-    s.weak_frameworks = 'AppTrackingTransparency'
+    c.framework = 'AdSupport', 'iAd'
+    c.weak_frameworks = 'AppTrackingTransparency'
     base_dir = 'SensorsAdvertising/'
     c.vendored_frameworks = base_dir + 'SensorsAdvertising.framework'
   end
