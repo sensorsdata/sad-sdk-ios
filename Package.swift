@@ -23,12 +23,14 @@ let package = Package(
         .binaryTarget(
             name: "SensorsAdvertising",
             path: "SensorsAdvertising/SensorsAdvertising.xcframework"),
+        /// binary target cannot have dependencies, therefore a wrapper target is needed
         .target(
             name: "SensorsAdvertisingWrapper",
             dependencies: [
                 .target(name: "SensorsAdvertising", condition: .when(platforms: [.iOS])),
                 .product(name: "SensorsAnalyticsCore", package: "sa-sdk-ios"),
             ],
+            /// the directory cannot be empty, there needs to be at least a single `.h` and `.m` file
             path: "SensorsAdvertisingWrapper"
         )
     ]
