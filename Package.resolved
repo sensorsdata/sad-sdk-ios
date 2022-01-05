@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "sa-sdk-ios",
+        "repositoryURL": "https://github.com/asura1234/sa-sdk-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "7352dfaccb4a081b3385d6598ee967fa6dd0a86f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
