@@ -29,12 +29,7 @@ let package = Package(
                 .target(name: "SensorsAdvertising", condition: .when(platforms: [.iOS])),
                 .product(name: "SensorsAnalyticsCore", package: "sa-sdk-ios"),
             ],
-            path: "SensorsAdvertisingWrapper",
-            linkerSettings: [
-                .linkedLibrary("icucore"),
-                .linkedLibrary("sqlite3"),
-                .linkedLibrary("z"),
-            ]
+            path: "SensorsAdvertisingWrapper"
         )
     ]
 )
