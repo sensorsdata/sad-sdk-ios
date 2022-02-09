@@ -1,22 +1,24 @@
 PODS:
-  - SensorsAdvertising (0.0.4):
-    - SensorsAdvertising/Core (= 0.0.4)
-    - SensorsAnalyticsSDK (>= 2.6.3)
-  - SensorsAdvertising/Core (0.0.4):
-    - SensorsAnalyticsSDK (>= 2.6.3)
-  - SensorsAnalyticsSDK (4.1.1):
-    - SensorsAnalyticsSDK/Core (= 4.1.1)
-  - SensorsAnalyticsSDK/AutoTrack (4.1.1):
+  - SensorsAdvertising (0.1.0):
+    - SensorsAdvertising/Core (= 0.1.0)
+    - SensorsAnalyticsSDK (>= 4.2.0)
+  - SensorsAdvertising/Core (0.1.0):
+    - SensorsAnalyticsSDK (>= 4.2.0)
+  - SensorsAnalyticsSDK (4.2.0):
+    - SensorsAnalyticsSDK/Core (= 4.2.0)
+  - SensorsAnalyticsSDK/__Store (4.2.0)
+  - SensorsAnalyticsSDK/AutoTrack (4.2.0):
     - SensorsAnalyticsSDK/Common
-  - SensorsAnalyticsSDK/Base (4.1.1)
-  - SensorsAnalyticsSDK/Common (4.1.1):
+  - SensorsAnalyticsSDK/Base (4.2.0):
+    - SensorsAnalyticsSDK/__Store
+  - SensorsAnalyticsSDK/Common (4.2.0):
     - SensorsAnalyticsSDK/Extension
-  - SensorsAnalyticsSDK/Core (4.1.1):
+  - SensorsAnalyticsSDK/Core (4.2.0):
     - SensorsAnalyticsSDK/Common
     - SensorsAnalyticsSDK/Visualized
-  - SensorsAnalyticsSDK/Extension (4.1.1):
+  - SensorsAnalyticsSDK/Extension (4.2.0):
     - SensorsAnalyticsSDK/Base
-  - SensorsAnalyticsSDK/Visualized (4.1.1):
+  - SensorsAnalyticsSDK/Visualized (4.2.0):
     - SensorsAnalyticsSDK/AutoTrack
 
 DEPENDENCIES:
@@ -31,8 +33,8 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  SensorsAdvertising: e4081a2e777466a240f0070e528d691a3d08d4ad
-  SensorsAnalyticsSDK: c5400e14b4a1b1082abba66b75ea375d51154ab5
+  SensorsAdvertising: c80c7251f094a999f1abc9e799a3a661fbb6d5bd
+  SensorsAnalyticsSDK: 298ab500555cfcc8538119df06490001aa2cf4f3
 
 PODFILE CHECKSUM: d67ae6bdaf21e989655113c3d6aaff4767f56303
 
