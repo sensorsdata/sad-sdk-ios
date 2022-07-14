@@ -13,6 +13,8 @@
 #import "SADConfigOptions.h"
 #import "SensorsAdvertising.h"
 #import "SensorsAnalyticsSDK+SADAppInstall.h"
+#import "SADConfigOptions+Tracking.h"
+#import "SensorsAdvertising+Tracking.h"
 
 FOUNDATION_EXPORT double SensorsAdvertisingVersionNumber;
 FOUNDATION_EXPORT const unsigned char SensorsAdvertisingVersionString[];
