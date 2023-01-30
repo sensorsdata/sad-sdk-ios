@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SensorsAdvertising'
-  s.version = '0.1.3'
+  s.version = '0.1.4'
   s.summary = 'The official iOS SDK of Sensors Advertising.'
   s.homepage = 'http://www.sensorsdata.cn'
   s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
@@ -13,8 +13,6 @@ Pod::Spec.new do |s|
   s.ios.framework = 'UIKit', 'Foundation', "SystemConfiguration"
   s.weak_frameworks = 'AdServices'
   s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER': 'com.sensorsdata.SensorsAdvertising'}
-  s.xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.static_framework = true
   s.dependency 'SensorsAnalyticsSDK', '>= 4.4.1'
   s.default_subspec = 'Core'
 

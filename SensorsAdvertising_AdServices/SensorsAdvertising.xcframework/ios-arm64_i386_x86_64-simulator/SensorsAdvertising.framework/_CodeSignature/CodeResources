@@ -4,21 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/SADConfigOptions+Tracking.h</key>
-		<data>
-		9EpB5mwi6A78Y80e/IVHwVkVeM0=
-		</data>
 		<key>Headers/SADConfigOptions.h</key>
 		<data>
 		XmUEIDpMHGgzH37W0BiQCFdrVZ4=
 		</data>
-		<key>Headers/SensorsAdvertising+Tracking.h</key>
-		<data>
-		ctpXng2SYlMCSMNOKlm6An9xU9c=
-		</data>
 		<key>Headers/SensorsAdvertising-umbrella.h</key>
 		<data>
-		hB2LmIyzYpuM+Znt0Ldy7cWGYXc=
+		473QK8TSorwMqMfkVBq+MRGMhLQ=
 		</data>
 		<key>Headers/SensorsAdvertising.h</key>
 		<data>
@@ -30,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/PRtLpt1V3fXrlk/fJYxT+H1tj8=
+		WV/0ffO6FzaLsIllJRfJ/osvhgM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,17 +31,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/SADConfigOptions+Tracking.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9EpB5mwi6A78Y80e/IVHwVkVeM0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Yr+YTcUXCvLX11qLkVXoVsMN5Dtv/TA9Eywa9HkZNKA=
-			</data>
-		</dict>
 		<key>Headers/SADConfigOptions.h</key>
 		<dict>
 			<key>hash</key>
@@ -61,26 +42,15 @@
 			cbQ1M2bZv205GPMA5z8GHGXrQ1eX+u48XFqTzG5QyJk=
 			</data>
 		</dict>
-		<key>Headers/SensorsAdvertising+Tracking.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ctpXng2SYlMCSMNOKlm6An9xU9c=
-			</data>
-			<key>hash2</key>
-			<data>
-			oFNpnNZKO0MR++sgzbJiRdoSLQHtw6Hi2/srQqtVydY=
-			</data>
-		</dict>
 		<key>Headers/SensorsAdvertising-umbrella.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hB2LmIyzYpuM+Znt0Ldy7cWGYXc=
+			473QK8TSorwMqMfkVBq+MRGMhLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			syALcpcgpxK7Ai+RWAbyWivXD+4OmSNTCts3o3Wujv4=
+			zWZq1YpDpxpwl03DEt/DTurIBTYWdrY2Ha/jS6EGYZE=
 			</data>
 		</dict>
 		<key>Headers/SensorsAdvertising.h</key>
