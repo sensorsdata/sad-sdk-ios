@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name = 'SensorsAdvertising'
-  s.version = '0.1.4'
+  s.version = '0.1.5'
   s.summary = 'The official iOS SDK of Sensors Advertising.'
   s.homepage = 'http://www.sensorsdata.cn'
   s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.source = { :git => 'https://github.com/sensorsdata/sad-sdk-ios.git', :tag => 'v' + s.version.to_s}
   s.author = 'Sensors Data'
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
   s.cocoapods_version = '>= 1.5.0'
   s.ios.framework = 'UIKit', 'Foundation', "SystemConfiguration"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
 
   s.subspec 'Core' do |c|
-    c.framework = 'AdSupport', 'iAd'
+    c.framework = 'AdSupport'
     c.weak_frameworks = 'AppTrackingTransparency'
     base_dir = 'SensorsAdvertising/'
     c.vendored_frameworks = base_dir + 'SensorsAdvertising.xcframework'
