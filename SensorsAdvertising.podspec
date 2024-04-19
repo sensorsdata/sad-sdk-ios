@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SensorsAdvertising'
-  s.version = '0.1.5'
+  s.version = '0.1.6'
   s.summary = 'The official iOS SDK of Sensors Advertising.'
   s.homepage = 'http://www.sensorsdata.cn'
   s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
@@ -21,11 +21,13 @@ Pod::Spec.new do |s|
     c.weak_frameworks = 'AppTrackingTransparency'
     base_dir = 'SensorsAdvertising/'
     c.vendored_frameworks = base_dir + 'SensorsAdvertising.xcframework'
+    c.resource_bundle = { 'SensorsAdvertising' => 'Resources/**/*'}
   end
 
   s.subspec 'AdServices' do |a|
     base_dir = 'SensorsAdvertising_AdServices/'
     a.vendored_frameworks = base_dir + 'SensorsAdvertising.xcframework'
+    a.resource_bundle = { 'SensorsAdvertising' => 'Resources/**/*'}
   end
 
 end
