@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SensorsAdvertising'
-  s.version = '0.1.7'
+  s.version = '0.1.8'
   s.summary = 'The official iOS SDK of Sensors Advertising.'
   s.homepage = 'http://www.sensorsdata.cn'
   s.license = { :type => 'Apache 2.0', :file => 'LICENSE' }
