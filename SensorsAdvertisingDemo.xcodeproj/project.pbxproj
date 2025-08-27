@@ -184,6 +184,7 @@
 				45C1A88226DA1F6300A7FFA5 /* Frameworks */,
 				45C1A88326DA1F6300A7FFA5 /* Resources */,
 				216FE2EC800670DAA39A1A1B /* [CP] Embed Pods Frameworks */,
+				610E77A62F85B456110BDAB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +223,7 @@
 				45C1A8A826DA1F6600A7FFA5 /* Frameworks */,
 				45C1A8A926DA1F6600A7FFA5 /* Resources */,
 				F681D3C60CD9122FF87D8B7A /* [CP] Embed Pods Frameworks */,
+				78C51C5ECA1930F6BBCFAD46 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +319,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo/Pods-SensorsAdvertisingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		610E77A62F85B456110BDAB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo/Pods-SensorsAdvertisingDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo/Pods-SensorsAdvertisingDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo/Pods-SensorsAdvertisingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78C51C5ECA1930F6BBCFAD46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests/Pods-SensorsAdvertisingDemo-SensorsAdvertisingDemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A7CFFF05EE40830800D09D5E /* [CP] Check Pods Manifest.lock */ = {
